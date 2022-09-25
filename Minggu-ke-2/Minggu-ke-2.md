@@ -179,7 +179,32 @@ dikit ah, ngeluh terus lu, baru segitu aja ngeluh gimana mau jadi kaya kakak-kak
 
 dari pelajaran kemarin diajarin kann cara-caranya. berikut penjelasan commandnya sekaligus cara kirim ke repo menggunakan git.
 
-<h3>**1. Step one**</h3>
-<h3>**2. Step two**</h3>
-<h3>**3. Step three**</h3>
-<h3>**4. Step four**</h3>
+<h3>1. Step one</h3>
+pertama kamu harus menginisialisasi dulu tuh si Git nya. dengan cara ketik
+
+```
+git config --global user.name
+git config --global user.email
+
+git config ini mengiinisialisasi folder yang ditunjuk untuk menambahkan profile, git config harus berada di satu folder karena kalau tidak, pada saat mau add dan commit, akan banyak file dan folder yang tidak seharusnya masuk ke dalam git ini
+```
+
+kenapa harus git init? gabis git keren gitu? itu udah bawaan bambang-_-,
+lanjutttt
+
+selanjutnyaa kalo sudah ter inisialisasi bisa cek menggunakan `git diff ` . `git diff` itu berfungsi untuk melihat apakah sudah berhasil menambahkan user nama dan emailnya atau belum
+![tampilanpwd](/tampilangitbash.png)
+
+kalo udah begini tandanya berhasil ya ges
+
+<h3> 2. Step two </h3>
+setelah step tersebut dilaksanakan inisialisasi seperti yang dijelaskan kak auzan, git init ini layaknya kartu memori yang dipasang ke user
+
+dengan ketik
+
+```
+git init
+```
+
+setelah mengetik maka akan ada tampilan seperti dibawah ini:
+![tampilanpwd](/tampilangitbash.png)
