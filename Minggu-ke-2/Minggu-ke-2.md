@@ -42,7 +42,14 @@ oiyaa!, Sebelum menggunakan Git Bash, kami di minta untuk menginstall Git Bash u
 
 setelah mengetahui apa itu git bash selanjutnya kami mempelajari Command dasar dalam pengoperasian Git Bash. dalam penggunaanya baik CLI maupun GUI filesystem dalam menyajikan data itu sama, apabila di GUI terdapat file
 
+```
+- folder1
+- folder2
+    - file.md
+    - index.html
 
+```
+maka bisa di baca : di root ini terdapat dua folder, yaitu `folder1` dan `folder2`, di dalam `folder2` terdapat dua file didalamnya yaitu `file.md` dan `index.html`. setelah mengetahui filesystem, kita belajar mengenai Unix Command dasar.
 
 <h3>Unix Command<h3>
 
