@@ -38,7 +38,7 @@ Apabila menggunakan CLI harus menggunakan command atau perintah untuk mengoperas
 
 oiyaa!, Sebelum menggunakan Git Bash, kami di minta untuk menginstall Git Bash untuk windows yang ada di mbah gugel. setelah mendownload lakukan instalasi Git Bash menggunakan Installer yang sudah di download tadi setelah itu open Git Bash yang sudah ter install. sehingga tampilan yang terlihat yaituu seperti dibawah ini:
 
-![Tampilan Git Bash](/assets/images/tampilangitbash.png "San Juan Mountains")
+![Tampilan Git Bash](/atampilangitbash.png "San Juan Mountains")
 
 setelah mengetahui apa itu git bash selanjutnya kami mempelajari Command dasar dalam pengoperasian Git Bash. dalam penggunaanya baik CLI maupun GUI filesystem dalam menyajikan data itu sama, apabila di GUI terdapat file
 
