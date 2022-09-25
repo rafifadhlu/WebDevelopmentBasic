@@ -47,9 +47,18 @@ setelah mengetahui apa itu git bash selanjutnya kami mempelajari Command dasar d
 - folder2
     - file.md
     - index.html
-
 ```
 maka bisa di baca : di root ini terdapat dua folder, yaitu `folder1` dan `folder2`, di dalam `folder2` terdapat dua file didalamnya yaitu `file.md` dan `index.html`. setelah mengetahui filesystem, kita belajar mengenai Unix Command dasar.
 
 <h3>Unix Command<h3>
+
+<h4>PWD</h4>
+PWd ini command atau perintah yang di tempati pada saat ini.
+syntax penulisannya: 
+```
+pwd
+```
+dan akan menghasilkan
+
+![Tampilan pwd] (/atampilangitbash.png "San Juan Mountains")
 
