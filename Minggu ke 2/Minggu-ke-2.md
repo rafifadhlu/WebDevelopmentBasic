@@ -4,12 +4,12 @@ Selama seminggu sudah kegiatan pembelajaran dilaksanakan dan banyak hal menarik 
 panduan dari kakak-kakak mentor dan juga pemateri saat live class banyak membantu dalam pengembangan diri saya. Pada pembelajaran minggu ini membahas beberapa
 materi yaitu 
 
-- [x] Unix Command Line
-- [x] Git & Github Dasar
-- [x] HTML Dasar
-- [x] CSS Dasar
-- [x] Algorithm & Data Structure
-- [x] JavaScript Dasar
+- Unix Command Line
+- Git & Github Dasar
+- HTML Dasar
+- CSS Dasar
+- Algorithm & Data Structure
+- JavaScript Dasar
 
 <h2> Unix Command Line </h2>
 Pada materi awal ini yaitu Unix Command Line diajarkan bagaimana menggunakan Command dasar yang biasa digunakan untuk sebuah CLI untuk dikirimkan kepada shell. Sebelumnya apasih itu Shell?. 
@@ -27,4 +27,9 @@ Definisi CLI dan GUI itu sendiri adalah:
 
 Sehingga dari definisi diatas dapat dilihat proses yang dilaksanakan yaitu
 
-<code>CLI/GUI -> Shell -> sistem </code>
+<code>CLI/GUI -> Shell -> sistem 
+</code>
+
+Apabila menggunakan CLI harus menggunakan command atau perintah untuk mengoperasikannya. seperti halnya dengan GUI, apabila ingin memindahkan file bisa langsung klik kanan folder yang ingin dipindah lalu klik kanan pilih cut. CLI pun sama yang membedakannya hanya melalui text. pada pembelajaran kemarin diajarkan Command dasar menggunakan Git Bash. Command dasar yang diajarkan bisa dilihat di bawah ini.
+
+<h3>Unix Command<h3>
