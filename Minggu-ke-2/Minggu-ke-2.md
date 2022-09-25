@@ -186,7 +186,9 @@ pertama kamu harus menginisialisasi dulu tuh si Git nya. dengan cara ketik
 git config --global user.name
 git config --global user.email
 
-git config ini mengiinisialisasi folder yang ditunjuk untuk menambahkan profile, git config harus berada di satu folder karena kalau tidak, pada saat mau add dan commit, akan banyak file dan folder yang tidak seharusnya masuk ke dalam git ini
+git config ini mengiinisialisasi folder yang ditunjuk untuk menambahkan profile, 
+git config harus berada di satu folder karena kalau tidak, pada saat mau add dan commit, 
+akan banyak file dan folder yang tidak seharusnya masuk ke dalam git ini
 ```
 
 kenapa harus git init? gabis git keren gitu? itu udah bawaan bambang-_-,
