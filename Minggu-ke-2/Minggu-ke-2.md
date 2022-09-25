@@ -159,3 +159,24 @@ mv <nama-file1> /<direktori-tujuan>
 dan akan menghasilkan
 
 ![tampilanpwd](/tampilangitbash.png)
+
+<h2> Git & Github </h2>
+yeyy pembelajaran unix command lain sudah dilaluii, selanjutnya diberikan materii ajar mengenai Git dan Github. seperti sebelumnya, kita berkenalan dulu. 
+
+<h4>Apa sih Git?</h4>
+Git adalah salah satu VCS. apa itu vcs? video call syariah, bukan euy. VCS disini itu yang berarti Version Contro System, yang mengelola perubahan dari sebuah dokumen, website, program komputer ataupun yang lain. jadi Git ini yang mengelola kalo ada update. gitu pokoknyaa.
+
+okee lanjut!
+
+Git tadi udah kan ya, selanjutnya
+
+<h4> Apa sih Git Hub?</h>
+nahh, Git hub ini bisa dibilang komunitasnyaa atau tempat untuk menyimpan project atau repository dari local repository disebut juga komputer kita.
+terus kalo mau kirim atau uploadnya gimana? okee aku jelasin yaa. kemarin selama pembelajaran di ajarkan cara inisialisasi git pada local repo dan cara menggunakan command add, commit, remote, push. 
+
+wah banyak juga ya >_<. 
+dikit ah, ngeluh terus lu, baru segitu aja ngeluh gimana mau jadi kaya kakak-kakak skilvul.
+
+dari pelajaran kemarin diajarin kann cara-caranya. berikut penjelasan commandnya sekaligus cara kirim ke repo menggunakan git.
+
+<h3> Step one </h3>
