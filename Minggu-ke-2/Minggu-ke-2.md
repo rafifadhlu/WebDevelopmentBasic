@@ -60,5 +60,5 @@ pwd
 ```
 dan akan menghasilkan
 
-![Tampilan pwd] (/atampilangitbash.png "San Juan Mountains")
+![tampilanpwd](/tampilangitbash.png)
 
