@@ -19,9 +19,12 @@ Pada materi awal ini yaitu Unix Command Line diajarkan bagaimana menggunakan Com
 </dl>
 
 selanjutnya dalam menerima perintah, Shell mempunyai dua jenis untuk menerimanya yaitu melalui CLI dan GUI. 
-
 Definisi CLI dan GUI itu sendiri adalah:
 <dl>
     <dt>CLI </dt>
     <dd>Command Line Interface kepanjangan dari CLI yang bertugas untuk menerima perintah dan berbasis teks. 
 </dl>
+
+Sehingga dari definisi diatas dapat dilihat proses yang dilaksanakan yaitu
+
+<code>CLI/GUI -> Shell -> sistem </code>
