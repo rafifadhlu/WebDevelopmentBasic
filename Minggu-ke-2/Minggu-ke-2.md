@@ -65,6 +65,7 @@ dan akan menghasilkan
 
 <h4>ls</h4>
 ls kependekan dari list files yang digunakan untuk melihat isi konten dari sebuah direktori. apabila perintah ini dijalankan akan muncul list konten yang ada di dalam direktori.
+
 syntax penulisannya: 
 
 ```
@@ -75,7 +76,8 @@ dan akan menghasilkan
 ![tampilanpwd](/tampilangitbash.png)
 
 <h4>cd</h4>
-cd kependekan dari change directory yang digunakan untuk berpindah directory. misal dari directory A ke directory B
+cd kependekan dari change directory yang digunakan untuk berpindah directory. misal dari directory A ke directory B.
+
 syntax penulisannya: 
 
 ```
@@ -87,6 +89,7 @@ dan akan menghasilkan
 
 <h4>mkdir</h4>
 mkdir kependekan dari make directory yang digunakan untuk membuat sebuah directory.
+
 syntax penulisannya: 
 
 ```
@@ -98,6 +101,7 @@ dan akan menghasilkan
 
 <h4>touch</h4>
 touch merupakan command yang digunakan untuk membuat suatu file
+
 syntax penulisannya: 
 
 ```
