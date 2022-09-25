@@ -52,8 +52,8 @@ maka bisa di baca : di root ini terdapat dua folder, yaitu `folder1` dan `folder
 
 <h3>Unix Command<h3>
 
-<h4>PWD</h4>
-PWd ini command atau perintah yang di tempati pada saat ini.
+<h4>pwd</h4>
+pwd kependekan dari print working directory command atau perintah ini menampilkan tempat yang di tempati pada saat ini.
 syntax penulisannya: 
 
 ```
@@ -63,3 +63,46 @@ dan akan menghasilkan
 
 ![tampilanpwd](/tampilangitbash.png)
 
+<h4>ls</h4>
+ls kependekan dari list files yang digunakan untuk melihat isi konten dari sebuah direktori. apabila perintah ini dijalankan akan muncul list konten yang ada di dalam direktori.
+syntax penulisannya: 
+
+```
+ls
+```
+dan akan menghasilkan
+
+![tampilanpwd](/tampilangitbash.png)
+
+<h4>cd</h4>
+cd kependekan dari change directory yang digunakan untuk berpindah directory. misal dari directory A ke directory B
+syntax penulisannya: 
+
+```
+cd /folder-tujuan
+```
+dan akan menghasilkan
+
+![tampilanpwd](/tampilangitbash.png)
+
+<h4>mkdir</h4>
+mkdir kependekan dari make directory yang digunakan untuk membuat sebuah directory.
+syntax penulisannya: 
+
+```
+mkdir <nama-direktori>
+```
+dan akan menghasilkan
+
+![tampilanpwd](/tampilangitbash.png)
+
+<h4>touch</h4>
+touch merupakan command yang digunakan untuk membuat suatu file
+syntax penulisannya: 
+
+```
+touch <nama-direktori + format file>
+```
+dan akan menghasilkan
+
+![tampilanpwd](/tampilangitbash.png)
