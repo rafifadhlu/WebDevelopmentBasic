@@ -22,7 +22,7 @@ selanjutnya dalam menerima perintah, Shell mempunyai dua jenis untuk menerimanya
 Definisi CLI dan GUI itu sendiri adalah:
 <dl>
     <dt>CLI </dt>
-    <dd>Command Line Interface kepanjangan dari CLI yang bertugas untuk menerima perintah dan berbasis teks. 
+    <dd>Command Line Interface kepanjangan dari CLI yang bertugas untuk menulis perintah dan berbasis teks. 
 </dl>
 
 Sehingga dari definisi diatas dapat dilihat proses yang dilaksanakan yaitu
@@ -30,6 +30,16 @@ Sehingga dari definisi diatas dapat dilihat proses yang dilaksanakan yaitu
 <code>CLI/GUI -> Shell -> sistem 
 </code>
 
-Apabila menggunakan CLI harus menggunakan command atau perintah untuk mengoperasikannya. seperti halnya dengan GUI, apabila ingin memindahkan file bisa langsung klik kanan folder yang ingin dipindah lalu klik kanan pilih cut. CLI pun sama yang membedakannya hanya melalui text. pada pembelajaran kemarin diajarkan Command dasar menggunakan Git Bash. Command dasar yang diajarkan bisa dilihat di bawah ini.
+Apabila menggunakan CLI harus menggunakan command atau perintah untuk mengoperasikannya. seperti halnya dengan GUI, apabila ingin memindahkan file bisa langsung klik kanan folder yang ingin dipindah lalu klik kanan pilih cut. CLI pun sama, yang membedakannya hanya ia melalui text. pada pembelajaran kemarin diajarkan Command dasar menggunakan Git Bash. lalu apa itu git bash? 
+<dl>
+    <dt>Git Bash</dt>
+    <dd>Git bash adalah aplikasi yang di khususkan untuk windows untuk  emulasi git yang dimana untuk menjalankan fitur-fitur bash .
+</dl>
+
+oiyaa!, Sebelum menggunakan Git Bash, kami di minta untuk menginstall Git Bash untuk windows yang ada di mbah gugel. setelah mendownload lakukan instalasi Git Bash menggunakan Installer yang sudah di download tadi setelah itu open Git Bash yang sudah ter install. sehingga tampilan yang terlihat yaituu seperti dibawah ini:
+
+![Tampilan Git Bash](/c/User/bodyn/documents/HMIF/Keperluan-Pribadi/msib "San Juan Mountains")
+
+setelah mengetahui apa itu git bash selanjutnya kami mempelajari Command dasar dalam pengoperasian Git Bash. Command atau perintah yang saya pahami dalam pembelajaran kali ini yaitu:
 
 <h3>Unix Command<h3>
