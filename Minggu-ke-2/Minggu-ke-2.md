@@ -170,7 +170,7 @@ okee lanjut!
 
 Git tadi udah kan ya, selanjutnya
 
-<h4> Apa sih Git Hub?</h>
+<h4> Apa sih Git Hub?</h4>
 nahh, Git hub ini bisa dibilang komunitasnyaa atau tempat untuk menyimpan project atau repository dari local repository disebut juga komputer kita.
 terus kalo mau kirim atau uploadnya gimana? okee aku jelasin yaa. kemarin selama pembelajaran di ajarkan cara inisialisasi git pada local repo dan cara menggunakan command add, commit, remote, push. 
 
@@ -179,4 +179,7 @@ dikit ah, ngeluh terus lu, baru segitu aja ngeluh gimana mau jadi kaya kakak-kak
 
 dari pelajaran kemarin diajarin kann cara-caranya. berikut penjelasan commandnya sekaligus cara kirim ke repo menggunakan git.
 
-<h3> Step one </h3>
+<h3>**1. Step one**</h3>
+<h3>**2. Step two**</h3>
+<h3>**3. Step three**</h3>
+<h3>**4. Step four**</h3>
