@@ -38,7 +38,7 @@ Apabila menggunakan CLI harus menggunakan command atau perintah untuk mengoperas
 
 oiyaa!, Sebelum menggunakan Git Bash, kami di minta untuk menginstall Git Bash untuk windows yang ada di mbah gugel. setelah mendownload lakukan instalasi Git Bash menggunakan Installer yang sudah di download tadi setelah itu open Git Bash yang sudah ter install. sehingga tampilan yang terlihat yaituu seperti dibawah ini:
 
-![Tampilan Git Bash](/c/User/bodyn/documents/HMIF/Keperluan-Pribadi/msib/assets-msib/unixgit/tampilangitbash.png "San Juan Mountains")
+![Tampilan Git Bash](/c/Users/bodyn/Documents/gitloc/skilvul-msib/assets-msib/unixgit/tampilangitbash.png "San Juan Mountains")
 
 setelah mengetahui apa itu git bash selanjutnya kami mempelajari Command dasar dalam pengoperasian Git Bash. Command atau perintah yang saya pahami dalam pembelajaran kali ini yaitu:
 
