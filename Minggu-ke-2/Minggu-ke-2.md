@@ -55,6 +55,7 @@ maka bisa di baca : di root ini terdapat dua folder, yaitu `folder1` dan `folder
 <h4>PWD</h4>
 PWd ini command atau perintah yang di tempati pada saat ini.
 syntax penulisannya: 
+
 ```
 pwd
 ```
