@@ -54,6 +54,7 @@ maka bisa di baca : di root ini terdapat dua folder, yaitu `folder1` dan `folder
 
 <h4>pwd</h4>
 pwd kependekan dari print working directory command atau perintah ini menampilkan tempat yang di tempati pada saat ini.
+
 syntax penulisannya: 
 
 ```
@@ -106,6 +107,54 @@ syntax penulisannya:
 
 ```
 touch <nama-direktori + format file>
+```
+dan akan menghasilkan
+
+![tampilanpwd](/tampilangitbash.png)
+
+<h4>cp</h4>
+cp merupakan command yang digunakan untuk membuat suatu file
+
+syntax penulisannya: 
+
+```
+cp <nama-file> <direktori-tujuan>
+```
+dan akan menghasilkan
+
+![tampilanpwd](/tampilangitbash.png)
+
+<h4>rm</h4>
+rm merupakan kependekan dari remove. command ini digunakan untuk menghapus suatu file & directory
+
+syntax penulisannya: 
+
+```
+rm <nama-file> 
+
+atau 
+
+rm -f <nama-file> 
+(command rm -f ini akan memaksa menghapus dan mengabaikan konfirmasi penghapusan)
+```
+dan akan menghasilkan
+
+![tampilanpwd](/tampilangitbash.png)
+
+
+<h4>mv</h4>
+mv merupakan singkatan move, dalam unix, tidak ada command untuk menghapus sehingga rename file bisa menggunakan mv
+
+syntax penulisannya: 
+
+```
+rename files
+mv <nama-file1> <nama-pengganti> 
+(nama-file1 akan terhapus dan diganti dengan nama-pengganti yang mengandung konten sebelumnya)
+
+move files
+mv <nama-file1> /<direktori-tujuan>
+(nama-file1 akan di pindahkan ke direktori-tujuan)
 ```
 dan akan menghasilkan
 
