@@ -210,3 +210,38 @@ git init
 
 setelah mengetik maka akan ada tampilan seperti dibawah ini:
 ![tampilanpwd](/tampilangitbash.png)
+
+<h2>HTML dasar </h2>
+
+masukk ke materi ajar HTML. HTML ini adalah bahasa markup atau bahasa struktur yang digunakan untuk membangun sebuah website. HTML digunakan untuk strukturnya, CSS untuk styling seperti baju, tas, kacamta, dan Javascript fungsi-fungsi yang ada di HTML. untuk CSS dan javascript nanti akan saya tulis sesuai urutan pembelajarannyaa.
+
+untuk menulis bahasa HTML ini banyak sekali software yang bisa digunakan tauu, salah satunya VSCODE yang digunakan banyak orang. 
+terus apa aja sih code editor?  
+
+ada beberapa code editor yang biasa digunakan yaitu:
+
+1. notepad++
+2. Sublim text - eh kurang "e" - Sublime Text -nah bener ini 
+3. VIM
+4. Visual Studio Code
+5. Atom
+
+banyakk sih code editor yang ada tapi disini saya hanya tau beberapa yang saya pernah dengar. mau pake text editor mana aja terserah yang membedakan dari satu dan lainnya yaitu dari fitur dan UX yang berbeda, gunain text editor sesuai kebutuhan dan pilih yang nyaman. kek dia dan aku hwhwhw.
+
+setelah mengetahui text editor yang ada, mulai masuk pembuatan dan pengenalan HTML. disini saya menggunakan Visual Studio Code karena enak dan nyaman.
+
+<h3> Membuat HTML sederhana </h3>
+nahh masukk ke pengaplikasian HTML nih. seperti yang sudah dijelaskan diatas, HTML merupakan bahasa struktur atau pondasi. sehingga kita harus menyusun kode HTML untuk menjadi sebuah struktur. 
+
+<h4>Web sederhana</h4>
+
+Pembuatan struktur saat ini yang dimana sudah HTML5 kita dapat menggunakan Semantic HTML. apa itu Semantic HTML? Semantic HTML itu sturktur penulisan supaya dapat di baca dan mudah dimengerti oleh orang lain. karena didalam Semantic HTML terdapat beberapa attribut seperti dibawah ini
+
+Semantic HTML
+```
+<!html>
+    <header></header>
+    <main></main>
+    <footer></footer>
+</html>
+```
