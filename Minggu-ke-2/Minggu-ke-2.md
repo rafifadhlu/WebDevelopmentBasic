@@ -240,8 +240,24 @@ Pembuatan struktur saat ini yang dimana sudah HTML5 kita dapat menggunakan Seman
 Semantic HTML
 ```
 <!html>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header></header> (sesuai maknanya header, ada di atas sebuah website. biasanya sebagai navigation bar)
+    <main></main> (ini juga sama, main yang berarti utama, atau isi dari sebuah website yang ingin dibangun)
+    <footer></footer> (ini juga sama kakk, footer ada dibawah dari website yang disusun)
 </html>
 ```
+
+jadi seperti itu yang namanya semantic HTML.
+
+lanjutt~ 
+
+setelah mengetahui Semantic HTML masuk ke dalam pengimplementasiannya, disini saya ingin menambahkan judul untuk website yang ingin dibuat.
+
+dengan penulisannya menggunakan Attribut <h1>
+
+```
+<!html>
+    <h1> ini judul </h1>
+<html>
+```
+
+maka akan tampil seperti dibawah ini
