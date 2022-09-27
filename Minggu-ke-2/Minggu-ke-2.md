@@ -235,7 +235,7 @@ nahh masukk ke pengaplikasian HTML nih. seperti yang sudah dijelaskan diatas, HT
 
 <h4>Web sederhana</h4>
 
-Pembuatan struktur saat ini yang dimana sudah HTML5 kita dapat menggunakan Semantic HTML. apa itu Semantic HTML? Semantic HTML itu sturktur penulisan supaya dapat di baca dan mudah dimengerti oleh orang lain. karena didalam Semantic HTML terdapat beberapa attribut seperti dibawah ini
+Pembuatan struktur saat ini yang dimana sudah HTML5 kita dapat menggunakan Semantic HTML. apa itu Semantic HTML? Semantic HTML itu sturktur penulisan supaya dapat di baca dan mudah dimengerti oleh orang lain. karena didalam Semantic HTML terdapat beberapa tag seperti dibawah ini
 
 Semantic HTML
 ```
@@ -252,12 +252,108 @@ lanjutt~
 
 setelah mengetahui Semantic HTML masuk ke dalam pengimplementasiannya, disini saya ingin menambahkan judul untuk website yang ingin dibuat.
 
-dengan penulisannya menggunakan Attribut <h1>
+dengan penulisannya menggunakan tag `<h1>`
 
 ```
 <!html>
     <h1> ini judul </h1>
 <html>
 ```
+oiyaa, apabila menggunakan vscode untuk melihat hasil dari website yang sudah di buat bisa menggunakan Plugin Live server yang perlu di install untuk menggunakanya. Setelah menginstall Plugin Live server, maka hasil yang muncul akan seperti dibawah ini
 
-maka akan tampil seperti dibawah ini
+img
+
+Selain title menggunakan tag `<h1>`tersebut terdapat tag lainnnya, yaitu:
+```
+    <h1> ini judul </h1>
+    <p> ini digunakan sebagai paragraph</p>
+    <img src=""> attribute ini digunakan untuk menambahkan gambar atau picture ke dalam web yang dibuat
+    <video> 
+        <source src="" type="video/mp4"> attribute ini digunakan untuk mengambil video dari sumbernya
+    </video>
+```
+Setelah penyusunan selesai, mulai dari HTML, CSS, ataupun JavaScript. Selanjutnya bisa di deploy atau di publikasikan ke internet dengan bantuan dari Website untuk deploy, seperti Heroku, Netlify.
+
+<h2>CSS</h2>
+
+yeyy masuk ke CSS. diatas tadi sudah sedikit dijelaskan yaa kan, CSS itu layaknya sebuah pakaian dari sebuah manusia, yang mana dia mempercantik tampilan atau visual dengan susunan kode yang diketik. 
+
+cara menggunakan CSS ini ada 2 macam ya ges.
+
+<dl>
+    <dt>Internal</dt>
+    <dd>Cara yang pertama yaitu dengan cara menyisipkan secara langsung ke dalam code HTML.
+    Terus gimana sih caranya?
+</dl>
+Cara penerapannya kaya gini gais
+
+```
+<!html>
+    *<style>
+        h1{
+
+        }
+    </style>
+    <body>
+    <h1> </h1>
+    </body>
+</html>
+
+
+pada internal css menggunakan tag <style></style> setelah itu masukan menggunakan selector dari suatu elemen 
+yang ingin di perbagus tampilannya. Bisa juga langsung di dalam tag seperti dibawah ini,
+
+<!html>
+    <body>
+    <h1 style="font-weight= ;"> </h1>
+    </body>
+</html>
+```
+<dl>
+    <dt>External</dt>
+    <dd>Cara yang kedua yaitu dengan cara External. atau bisa disebut juga diluar dari file html yang dibuat. jadinya nanti ada satu file bernama bebas dengan format .css
+    Terus gimana sih caranya?
+</dl>
+Cara penerapannya kaya gini gais
+
+di file pertama dengan format .html kita buat seperti dibawah. selanjutnya kita buat file bernama style.css dan dihubungkan
+menggunakan tag `<link rel>`. lebih lengkap seperti dibawah ini
+```
+<!html>
+    <link rel="stylesheet" href="styles.css">
+    <body>
+    <h1 id="tes'> </h1>
+    <h1 class="tes'> </h1>
+    </body>
+</html>
+
+nah di dalam file css yang sudah dibuat tadi kita pilih menggunakan selector yang tersedia untuk memperbagus tampilannya
+selector ada beberapa macam yaitu
+
+.tes = untuk memilih atau select elemen yang mempunyai class dengan nama test
+#tes = untuk memilih atau select elemen yang mempunyai id dengan nama test
+sedangkan kalau tidak ada spesifik nama yang dibuat bisa ditambahkan langsung dengan mengetik elemen yang dibuat
+
+sebagai contoh dengan html yang sudah dibuat diatas, maka file css perlu diiisi;
+
+.tes{
+    background-color = red; -> disini background akan berubah menjadi merah
+    color = red; -> apabila menggunakan color saja, yang berubah merupajan isi atau text dari elemen <h1>
+}
+
+```
+tapii ada satu hal lagi nih, pembuatan website sederhana belum sempurnaa. kenapa? karena belum bisa mengikuti tampilan dari berbagai macam layar. loh kok bisa? iyaa jadi perlu di buat responsive menggunakan `media queries`. gimana tu cara pakainya kack? okee masukk ke caranya.
+
+<h3> Penggunaan Media Query </h3>
+
+```
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+untuk membuat web kita menjadi responsive diperlukan membuat media query seperti diatas.
+```
+
+pada media queries diatas terdapat attribute `(max-width: 600px)` yang berarti tampilan akan menyesuaikan sampai batas maksimal yaitu 600px. media queries ini disesuaikan dengan kebutuhan yang diperlukan.
