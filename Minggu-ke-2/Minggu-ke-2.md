@@ -60,9 +60,6 @@ syntax penulisannya:
 ```
 pwd
 ```
-dan akan menghasilkan
-
-![tampilanpwd](/tampilangitbash.png)
 
 <h4>ls</h4>
 ls kependekan dari list files yang digunakan untuk melihat isi konten dari sebuah direktori. apabila perintah ini dijalankan akan muncul list konten yang ada di dalam direktori.
@@ -72,9 +69,6 @@ syntax penulisannya:
 ```
 ls
 ```
-dan akan menghasilkan
-
-![tampilanpwd](/tampilangitbash.png)
 
 <h4>cd</h4>
 cd kependekan dari change directory yang digunakan untuk berpindah directory. misal dari directory A ke directory B.
@@ -84,9 +78,6 @@ syntax penulisannya:
 ```
 cd /folder-tujuan
 ```
-dan akan menghasilkan
-
-![tampilanpwd](/tampilangitbash.png)
 
 <h4>mkdir</h4>
 mkdir kependekan dari make directory yang digunakan untuk membuat sebuah directory.
@@ -96,9 +87,6 @@ syntax penulisannya:
 ```
 mkdir <nama-direktori>
 ```
-dan akan menghasilkan
-
-![tampilanpwd](/tampilangitbash.png)
 
 <h4>touch</h4>
 touch merupakan command yang digunakan untuk membuat suatu file
@@ -108,9 +96,6 @@ syntax penulisannya:
 ```
 touch <nama-direktori + format file>
 ```
-dan akan menghasilkan
-
-![tampilanpwd](/tampilangitbash.png)
 
 <h4>cp</h4>
 cp merupakan command yang digunakan untuk membuat suatu file
@@ -120,9 +105,6 @@ syntax penulisannya:
 ```
 cp <nama-file> <direktori-tujuan>
 ```
-dan akan menghasilkan
-
-![tampilanpwd](/tampilangitbash.png)
 
 <h4>rm</h4>
 rm merupakan kependekan dari remove. command ini digunakan untuk menghapus suatu file & directory
@@ -137,10 +119,6 @@ atau
 rm -f <nama-file> 
 (command rm -f ini akan memaksa menghapus dan mengabaikan konfirmasi penghapusan)
 ```
-dan akan menghasilkan
-
-![tampilanpwd](/tampilangitbash.png)
-
 
 <h4>mv</h4>
 mv merupakan singkatan move, dalam unix, tidak ada command untuk menghapus sehingga rename file bisa menggunakan mv
@@ -156,9 +134,6 @@ move files
 mv <nama-file1> /<direktori-tujuan>
 (nama-file1 akan di pindahkan ke direktori-tujuan)
 ```
-dan akan menghasilkan
-
-![tampilanpwd](/tampilangitbash.png)
 
 <h2> Git & Github </h2>
 yeyy pembelajaran unix command lain sudah dilaluii, selanjutnya diberikan materii ajar mengenai Git dan Github. seperti sebelumnya, kita berkenalan dulu. 
@@ -195,9 +170,7 @@ kenapa harus git init? gabis git keren gitu? itu udah bawaan bambang-_-,
 lanjutttt
 
 selanjutnyaa kalo sudah ter inisialisasi bisa cek menggunakan `git diff ` . `git diff` itu berfungsi untuk melihat apakah sudah berhasil menambahkan user nama dan emailnya atau belum
-![tampilanpwd](/tampilangitbash.png)
 
-kalo udah begini tandanya berhasil ya ges
 
 <h3> 2. Step two </h3>
 setelah step tersebut dilaksanakan inisialisasi seperti yang dijelaskan kak auzan, git init ini layaknya kartu memori yang dipasang ke user
@@ -208,8 +181,6 @@ dengan ketik
 git init
 ```
 
-setelah mengetik maka akan ada tampilan seperti dibawah ini:
-![tampilanpwd](/tampilangitbash.png)
 
 <h3>3. Step three</h3>
 setelah di inisialisasi selanjutnya buat file di dalam folder yang sudah di tandai dengan git init untuk dapat menyimpan baik di local repository maupun remote repository
@@ -423,7 +394,68 @@ for(i=0; i<=10; i++){
 hasilnya program akan output bilangan dari 1 -10;
 ```
 
+<h2>JavaScript</h2>
 
+Materi terakhir yang diberikan minggu ini adalahh jeng jeng jengg... Javascriptt. Javascript ini merupakan Bahasa Pemrograman yang digunakan untuk menambahkan fungsi atau tampilan seperti foto berjalan, clickable navigation, dan semacamnya.
 
+seperti bahasa program pada umumnya Javascript juga memiliki tipe data umum, seperti:
+- Bolean -> tipe data yang biasa digunakan untuk menilai benar atau salah. true / false
+- String -> tipe data ini merupakan tipe data yang berisi gabungan angka,huruf,simbol
+- Integer -> tipe data ini menampung angka apapun yang bernilai bilangan bulat
+- Float -> tipe data ini dapat membaca koma dibelakang angka. Misal : 3,5
 
+<h3> Pengimplementasian javascript </h3>
 
+ Dengan tipe data diatas bisa kita gunakan sesuai kebutuhan. sebagai contoh kita akan menggunakan tipe data Bolean.
+ sebelumnya untuk menjalankan javascript, kita harus membuat sebuah file html. kenapa? karena javascript merupakan bahasa yang tidak bisa berjalan sendiri. sehingga kita diminta membuat file html disatu folder yang sama. setelah sudah dilakukan connect untuk menghubungkan antara HTML dan file javascript yang sudah dibuat. gimana kak caranya? 
+
+ nah untuk menghubungkan Javascript ini menggunakan tag `<script>` dan ditambahkan atribut untuk menghubungkannya, jadi kaya dibawah ini
+ ```
+ <script src="nama-file.js"></script>
+ penenmpatannya biasa di dalam body di file html yang ada
+ ```
+dan untuk menjalankannya, cukup menjalankan file HTML menggunakan Live server dari Vscode. setelah itu masuk ke browser dan masuk ke developer tool atau biasa disebut inspect elemen dan masuk ke console log.
+
+<h3> Perulangan di javascript </h3>
+
+```
+for(let i = variabel awal; i<batas variabel; i++){
+    consolo.log
+}
+
+maka dengan syntax tersebut bisa di inputkan
+
+for(i=0; i<=10; i++){
+    console.log(i);
+}
+
+hasilnya program akan output bilangan dari 1 -10;
+disini kita menggunakan let karena let paling terbaru pengembangan dari var dan dapat menampung tipe data string,number.
+```
+
+programnya sama ya kaya di materi algoritma? yass saya copy paste doang, karena perulangan di javascript seperti itu. sebetulnya jenis for itu ada beberapa tapi disini dijelaskan for pada umumnya. lalu bagaimana kalu conditional gitu? okee kita masuk ke conditional ya
+
+<h3> kondisi pada javascript</h3>
+
+contoh kasus : memberikan output genap jika di input angka genap
+
+penyelesaian:
+
+```
+let bilangan = 10;
+
+if(bilangan % 2 == 0){
+    return "ini genap"
+}else{
+    return "ini ganjil"
+}
+
+penjelasan:
+
+di dalam if menggunakan modulus (%2 == 0) untuk menentukan sebuah bilangan yang akan di hitung dan apabila hasilnya 
+"true" maka return nilai "ini genap"
+```
+
+Selesai sudah materi yang diajarkan pada minggu ini. Sekian dari saya lebihnya di allah kurangnya di saya. terima kasih kakak mentor yang sudah memberikan materi ajar kepada saya dan teman-teman lainnya.
+
+Hv a nice day :)
