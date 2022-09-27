@@ -211,6 +211,26 @@ git init
 setelah mengetik maka akan ada tampilan seperti dibawah ini:
 ![tampilanpwd](/tampilangitbash.png)
 
+<h3>3. Step three</h3>
+setelah di inisialisasi selanjutnya buat file di dalam folder yang sudah di tandai dengan git init untuk dapat menyimpan baik di local repository maupun remote repository
+
+<h3>4. Step four </h3>
+apabila sudah membuat suatu file selanjutnya di lakukan pengecekan dengan cara ketik git status untuk melihat apakah ada untracked files atau tidak. jika ada dilakukan "git add ." untuk menambahkannya ke fase staging. 
+
+</h3>5. Step FIve </h3>
+Langkah terakhir yang harus dilakukan yaitu, git commit -m "nama pesan yang diinginkan" untuk menambah update an di local repository.
+
+lalu bagaimana cara mengupload ke github?
+
+```
+1. Buat repo di akun github yang udah dibuat
+2. setelah create repo copy 
+3. Masuk ke git bash dan ketikan git remote add origin https://github.com/user/repo.git sesuaikan dengan link yang sudah dibuat
+4. setelah sudah di connect ke dalam remote repo ketik git push -u origin "main/master" disesuaikan dengan gitbash main atau master
+```
+
+
+
 <h2>HTML dasar </h2>
 
 masukk ke materi ajar HTML. HTML ini adalah bahasa markup atau bahasa struktur yang digunakan untuk membangun sebuah website. HTML digunakan untuk strukturnya, CSS untuk styling seperti baju, tas, kacamta, dan Javascript fungsi-fungsi yang ada di HTML. untuk CSS dan javascript nanti akan saya tulis sesuai urutan pembelajarannyaa.
@@ -357,3 +377,53 @@ untuk membuat web kita menjadi responsive diperlukan membuat media query seperti
 ```
 
 pada media queries diatas terdapat attribute `(max-width: 600px)` yang berarti tampilan akan menyesuaikan sampai batas maksimal yaitu 600px. media queries ini disesuaikan dengan kebutuhan yang diperlukan.
+
+<h3>Penggunan Display Flexbox</h3>
+Flexbox ini digunakan untuk mempermudah dalam membuat responsive dan layoutingnya. penulisannya ini ditulis di dalam file css yang sudah dibuat dengan syntax:
+
+```
+.h1{
+    display:flex;
+}
+```
+<h2>Algoritma & Data Structure</h2>
+
+Pada materi kali ini membahas mengenai sebuah Algoritma dan data struktur. Algoritma itu sendiri adalah langkah-langkah terbatas yang digunakan untuk menyelesaikan suatu persoalan. Sebuah algoritma itu penting dalam programming karena tanpa algoritma, penyelesaian suatu masalah bisa memakan waktu yang sangat lama dan tidak efisien, serta memakan banyak ruang. Maka dari itu programmer di tuntut untuk membuat algoritma yang efektif dan efisien supaya menghasilkan kode yang bersih atau clean code. Maka dari itu terdapat sebuah cara atau metode yang ditemukan yaitu bernama Big O Notation untuk menghitung efektifitas algoritma yang sudah dibuat.
+
+Algoritma juga dapat berbagai macam bentuknya. yang pertama ada `Pseudocode` dan `flowchart`.
+contoh pseudocode:
+
+dengan kasus
+Ari lapar mau buat indomie
+
+dari kasus tersebut butuh tahapan-tahapan untuk ari membuat indomie. tahapannya yaitu:
+
+`Ari ambil mie -> setelah mie di ambil siapkan alat-alat makan -> ambil panci untuk masak -> taruh ke atas kompor dan ambil air untuk di panaskan -> jika sudah mendidih buka indomie yang sudah diambil -> masak mie ke dalam panci -> setelah matang tiriskan ke piring -> gunting bumbu dan taruh ke indomie -> aduk. dan mie siap disajikan`
+
+dari tahapan tersebut bisa dilihat bahwa itu adalah algoritma dari ari membuat indomie. 
+
+dalam programan sebagai contoh kasus perulangan
+
+case : ingin menampilkan bilangan 1 - 10;
+
+dari kasus tersebut bisa menggunakan while maupun for. disini saya praktik menggunakan for
+
+syntax dari for itu sendiri adalah
+```
+for(let i = variabel awal; i<batas variabel; i++){
+    consolo.log
+}
+
+maka dengan syntax tersebut bisa di inputkan
+
+for(i=0; i<=10; i++){
+    console.log(i);
+}
+
+hasilnya program akan output bilangan dari 1 -10;
+```
+
+
+
+
+
