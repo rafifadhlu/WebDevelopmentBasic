@@ -52,7 +52,6 @@ Semua bahasa pemrograman mempunyai data structure begitu juga dengan bahasa pemr
 
 penulisan javascript terdapat dua jenis yaitu primitive dan non-primitive.
 
-<h3>primitive</h3>
 
 Primiitive data types merupakan data tipe paling umum di bahasa java. yaitu ada:
 - Boolean type
@@ -63,7 +62,15 @@ Primiitive data types merupakan data tipe paling umum di bahasa java. yaitu ada:
 - String type
 - Symbol type
 
-Contoh penerapan Primitive data Types
+Non-Primitive ini merupakan tipe data yang di buat oleh Programmer, dan digunakan untuk menyimpan banyak nilai data types ada:
+- Class
+- Object
+- String
+- Array
+- Interface
+
+Contoh penerapan Primitive dan Non - Primitive data Types
+
 ```
 bolean 
 Bolean merupakan tipe data yang punya dua nilai yaitu true dan false.
@@ -119,3 +126,38 @@ sama seperti number, string juga mempunyai method, beberapa yaitu:
 - string.toLowerCase() -> output yang dihasilkan dari method ini, string yang huruf kapital akan menjadi huruf kecil
 
 masih banyak method lainnya, namun saya hanya mencantumkan hanya dua method sebagai contoh.
+
+<h3>Matematika pada javascript</h3>
+Dalam pengolahan angka dengan rumus matematika, di javascript terdapat cara yang simple yaitu dengan menggunakan method yang sudah disediakan. 
+
+<h4> apa saja method yang tersedia?</h4>
+
+Math.max()
+```
+method ini menentukan angka terbesar
+
+contoh:
+console.log(Math.max(1, 3, 2));
+
+maka hasil yang di tampilkan yaitu akan keluar angka 3 yang mana ia terbesar dari yang lain
+```
+
+Math.min()
+```
+method ini menentukan angka terkecil
+
+contoh:
+console.log(Math.min(1, 3, 2));
+
+maka hasil yang di tampilkan yaitu akan keluar angka 1 yang mana ia terkecil dari yang lain
+```
+
+Math.sqrt()
+```
+method ini menghitung akar dari sebuah angka yang diinput
+
+contoh:
+console.log(Math.sqrt(49));
+
+maka hasil yang di tampilkan yaitu akan keluar angka 7 yang mana ia hasil akar dari 49
+```
