@@ -37,9 +37,55 @@ function greeting(){
 
 <h3>Apa itu blocks</h3>
 Block merupakan code yang berada di dalam curly brace, sebagai contoh.
+
 ```
 for(let i=0; i<=10; i++){
 
 }
 Didalam "{}" ialah yang disebut dengan Blocks
+```
+Selanjutnya membahas mengenai Data Type Built In Prototype & method
+
+Semua bahasa pemrograman mempunyai data structure begitu juga dengan bahasa pemrogramming javascript. Javascript merupakan bahasa dinamik. variabel di javascript tidak langsung mengarah ke jenis nilai. 
+
+<h2>JavaScript Types</h2>
+
+penulisan javascript terdapat dua jenis yaitu primitive dan non-primitive.
+
+<h3>primitive</h3>
+
+Primiitive data types merupakan data tipe paling umum di bahasa java. yaitu ada:
+- Boolean type
+- Null type
+- Undefined type
+- Number type
+- BigInt type
+- String type
+- Symbol type
+
+Contoh penerapan Primitive data Types
+```
+bolean 
+Bolean merupakan tipe data yang punya dua nilai yaitu true dan false.
+
+if(angka <= 10){
+    return "hallo";
+}else{
+    return "world";
+}
+
+```
+```
+Null
+null  merupakan data yang sudah ada wadahnya namun tidak ada nilai yang tertampung
+
+let foo = null;
+
+```
+Undefined
+undefined merupakan data yang tidak teridentifikasi yang mana tidak ada tipe data yang ter deklarasi dan tidak ter inisialisasi
+
+foo;
+
+karena tidak ada tipe data yang inisialisasi.
 ```
