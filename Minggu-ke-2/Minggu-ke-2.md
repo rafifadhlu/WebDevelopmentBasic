@@ -82,6 +82,8 @@ null  merupakan data yang sudah ada wadahnya namun tidak ada nilai yang tertampu
 let foo = null;
 
 ```
+
+```
 Undefined
 undefined merupakan data yang tidak teridentifikasi yang mana tidak ada tipe data yang ter deklarasi dan tidak ter inisialisasi
 
@@ -89,3 +91,31 @@ foo;
 
 karena tidak ada tipe data yang inisialisasi.
 ```
+```
+number
+number pada javascript menampung angka positive - negative, baik bilangan bulat maupun koma.
+
+contoh number
+123 -> integer
+12.2 -> float   
+```
+pada number terdapat juga method yang dapat dipakai, beberapa antara lain:
+- Number.isNaN() -> singkatan dari Not a Number yang mana akan bernilai true jika nilai tersebut bukan angka. jika angka maka menampilkan false
+- Number.isInteger() -> sesuai dengan nama method "integer" akan bernilai true jika nilai tersebut angka integer. Jika angka bukan integer maka false
+
+masih banyak method lainnya, namun saya hanya mencantumkan hanya dua method sebagai contoh.
+
+```
+string
+String merupakan tipe data yang menampilkan kumpulan huruf angka dan simbol menjadi satu kesatuan menjadi text.
+
+contoh string:
+let aku = "ganteng";
+
+ganteng ter deklarasi sebagai string.
+```
+sama seperti number, string juga mempunyai method, beberapa yaitu:
+- string.toUpperCase() -> output yang dihasilkan dari method ini, string yang tersedia akan menjadi huruf kapital
+- string.toLowerCase() -> output yang dihasilkan dari method ini, string yang huruf kapital akan menjadi huruf kecil
+
+masih banyak method lainnya, namun saya hanya mencantumkan hanya dua method sebagai contoh.
