@@ -270,8 +270,11 @@ Allhamdulillah selesai juga, kurang lebihnya saya mohon maaff.
 Saya punya sedikit pantun..
 
 depan leptop panas sampai pagi,
+
 Paginya kelas lagi,
+
 Terima kasih atas pelajarn dan materi,
+
 Sekian dan terima kasih.
 
 Good night kakk.
