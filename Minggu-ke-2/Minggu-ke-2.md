@@ -265,9 +265,7 @@ btn.addEventListener("click", function(){
 })
 </script>
 ```
-Allhamdulillah selesai juga, kurang lebihnya saya mohon maaff. 
-
-Saya punya sedikit pantun..
+Allhamdulillah selesai juga, kurang lebihnya saya mohon maaff. Saya punya sedikit pantun..
 
 depan leptop panas sampai pagi,
 
