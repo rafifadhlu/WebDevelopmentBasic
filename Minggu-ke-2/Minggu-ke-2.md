@@ -161,3 +161,117 @@ console.log(Math.sqrt(49));
 
 maka hasil yang di tampilkan yaitu akan keluar angka 7 yang mana ia hasil akar dari 49
 ```
+
+<h2> DOM </h2>
+
+<h3>Apa sih DOM itu? </h3>
+DOM singkatan dari Document Object Manipulation yang berfungsi untuk mengubah tampilan supaya lebih dimanis dan juga untuk manipulasi sebuah website. DOM ini merupakan sebuah Web API yang membantu untuk memanipulasi website dan tersedia tidak hanya di Javascript namun di berbagai bahasa pemrograman. Lalu bagaimana cara manipulasinya kack? Lanjutt ke penggunaan DOM.
+
+<h3> Penggunaan DOM </h3>
+
+disini saya memberikan beberapa contoh DOM yang digunakan dan dipelajari
+
+<h4>Mengakses elemen HTML</h4>
+
+```
+document.getElementById() -> digunakan untuk mengakses elemen menggunakan id
+document.getElementByClass() -> digunakan untuk mengakses elemen menggunakan id
+
+document.querySelector() -> akan mengakses anak pertama dari elemen induk dan penggunaannya menggunakan CSS selector
+document.querySelectorAll() -> akan mengakses semua element yang mempunyai class/id/tag yang sama dan penggunaanya menggunakan CSS Selctor
+```
+
+<h4>Mengganti konten dari sebuah HTML</h4>
+
+.innerText 
+```
+cara penggunaan:
+
+
+<p>The text content of the button element is:</p>
+<p id="demo"></p>
+<p id="demo1">memel</p>
+
+<script>
+let text = document.getElementById("demo1").innerText;
+
+<script>
+
+apabila digunakan maka hasil yang keluar akan menampilkan "memel" dan bila ingin mengubahnya cukup ditambahkan
+
+<script>
+let text = document.getElementById("demo1").innerText = memei;
+
+<script>
+maka jika dijalankan akan menampilkan konten baru yaitu "memei"
+
+```
+.innerHTML
+```
+cara penggunaan:
+
+
+<p>The text content of the button element is:</p>
+<p id="demo"></p>
+<p id="demo1">memel</p>
+
+<script>
+let text = document.getElementById("demo1").innerHTML;
+
+<script>
+
+apabila digunakan maka hasil yang keluar akan menampilkan "<p id="demo1">memel</p>" dan bila ingin mengubahnya cukup ditambahkan
+
+<script>
+let text = document.getElementById("demo1").innerHTML = memei;
+
+<script>
+maka jika dijalankan akan menampilkan konten baru yaitu "<p id="demo1">memei</p>"
+
+```
+<h4>Menambahkan Event pada Elemen HTML</h4>
+
+Untuk menambahkan event ini terdapat 3 cara yaitu melalui
+
+1. Menggunakan Attribute
+```
+<button onclick="alert("pengerjaan sudah sampai jam 1 malam")">Try it</button>
+
+Attribute onclick akan memproses apabila elemen tersebut terdapat respon klik dari user
+```
+
+2. Melalui properties
+```
+<button id="btn">try it</button>
+
+<script>
+btn.onclick = function(){
+    background-color:red;
+}
+</script>
+```
+3. Menggunakan AddEventListener
+```
+<button id="btn">try it</button>
+
+<script>
+
+//buat variabel baru dengan mengakses elemen menggunakan id
+let btn =  document.getElementById("btn")
+
+//buat addEventListener untuk memasukan sebuah perintah
+btn.addEventListener("click", function(){
+    alert("pengerjaan sudah sampai jam 1 malam")
+})
+</script>
+```
+Allhamdulillah selesai juga, kurang lebihnya saya mohon maaff. 
+
+Saya punya sedikit pantun..
+
+depan leptop panas sampai pagi,
+Paginya kelas lagi,
+Terima kasih atas pelajarn dan materi,
+Sekian dan terima kasih.
+
+Good night kakk.
