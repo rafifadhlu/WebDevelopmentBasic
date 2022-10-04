@@ -81,28 +81,6 @@ maka hasil yang akan tampil yaitu
 ["tes" , 1 , "keren"]
 ```
 
-Array.pop()
-method pop() digunakan untuk menghapus data di akhir array
-```
-//membuat sebuah array
-let array = ["tes" , 1 , "keren"]
-
-//Menambahkan data array dengan push()
-array.push("ganteng")
-
-//Menampilkan Array sebuah array
-console.log(array) -> akan menampilkan isi dari array tersebut
-
-maka hasil yang akan tampil yaitu
-["tes" , 1 , "keren" , "ganteng"]
-
-//mengeluarkan data dengan pop()
-array.pop()
-
-maka hasil yang akan tampil yaitu
-["tes" , 1 , "keren"]
-```
-
 Array.shift()
 method shift() digunakan untuk menghapus data di awal array
 ```
