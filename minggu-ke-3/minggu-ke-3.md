@@ -497,3 +497,84 @@ let data = users.map((el) => {
     el.status = "aktif";
 });
 ```
+
+<h2>Rekursif dan modules</h2>
+
+<h3> Modules </h3>
+
+Modules adalah cara memisahkan kode ke file yang berbeda. sistem modules ini memiliki konsep import dan export dalam penggunaanya. 
+
+Misal dalam file yang pertama dibuat yaitu bernama "bekasi.js" sebagai variable export
+
+```
+export let makanan = {
+    makananFav : "mie ayam",
+    minumanFav : "Dawet",
+};
+
+export digunakan untuk mengexport objek makanan ke file lain
+
+export ini tidak terbatas hanya objek, namun bisa function, class, array, variabel
+
+selain ssyntax seperti diatas penulisan export juga bisa seperti dibawah ini
+
+let makanan = {
+    makananFav : "mie ayam",
+    minumanFav : "Dawet",
+};
+
+export { makanan }
+
+selain itu ada juga "export default" yang hanya bisa mengexport 1 saja.
+penggunaanya :
+
+export default makanan
+
+```
+
+di file yang berbeda kita namakan "jakarta.js" sebagai import.
+
+```
+syntax dasar import seperti dibawah ini
+import ... from "file"
+
+maka
+import {makanan} from "bekasi.js"
+
+setelah import objek makanan dari file "bekasi.js" akan di import ke dalam "jakarta.js"
+
+berbeda dengan import biasa, apabila ingin import file export yang menggunakan export default cukup
+menggunakan 
+
+import makanan from "bekasi.js" tidak menggunakan "{}"
+
+```
+untuk menggunakan module ini pada file html di tag script perlu ditambahkan attribute `type = modul` untuk bisa menggunakan modules
+
+<h3> Rekursive </h3>
+
+Rekursive ialah function yang memanggil dirinya sendiri sampai batas yang ditentukan.
+
+dalam rekursive ini terdapat dua bagian yaitu base case dan recursive case.
+
+<h4>apa itu base case?</h4>
+Base class merupakan titik paling kecil
+
+<h4>Apa itu recursive case</h4>
+Recursive case adalah titik dia manggil diri dia sendiri
+
+contoh recursive:
+```
+function deretAngka(n){ 
+    if (n == 1){        -> disebut base case sebagai titk berhenti dari program
+        console.log(n)
+    }else {             
+        deretAngka(n-1) -> Disebut recursive karena berulang memanggil fungsi sendiri yaitu "deretAngka()
+        console.log(n)
+    }
+}
+
+deretAngka(3)
+
+```
+
