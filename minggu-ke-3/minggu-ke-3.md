@@ -575,6 +575,65 @@ function deretAngka(n){
 }
 
 deretAngka(3)
-
 ```
 
+<h2>Asynchrounus</h2>
+
+dalam prosesnya asycnrounus akan menyelak proses yang memakan estimasi lama dan akan melakukan proses lainnya namun proses yang sebelumnya akan di jalankan kembali untuk di selesaikan.
+
+JS Asynchronous
+1. callback
+2. Promises
+3. Async Await
+
+dalam javascript proses yang dilaksanakan dengan ASynchronous
+
+1. Callback
+
+Callback adalah function yang dijadikan argumen dan menjalankan program dengan estimasi waktu ter cepat. sebagai contoh :
+
+```
+setTimeout(() => {
+    console.log("A")
+}, 10)
+console.log("B")
+
+console.log("c")
+
+dalam program ini akan lebih dlu tampil B setelah itu C, karena A mempunyai jeda waktu selama 10 ms.
+```
+
+
+2. Promies
+Dalam promies terdapat istilah pending , fullfiled, rejected. lalu apa itu?
+
+<h4> Pending </h4>
+Pending yang berarti masih di tahap penentuan sebelum dapat keputusan apakah fullfiled atau rejected
+
+<h4>Fullfield</h4>
+Fullfield yang berarti diterima atau dilanjutkan untuk proses selanjutnya
+
+<h4>Rejected</h4>
+Rejected yang berarti tidak diterima atau ditolak. Yahh sad di tolak:(( F.
+
+```
+let jalanPromise = new Promise((resolve, reject) => {
+    
+        resolve("hy ganteng")
+        reject("error");
+})
+
+
+jalanPromise.then(result =>{
+    console.log(result)
+})
+.catch((err) => {
+    console.log(err)
+})
+
+resolve -> jika kondisi berhasil
+reject -> jika kondisi tidak terpenuhi
+
+untuk mengambil resolve menggunakan .then
+sedangkan untuk mengambil reject menggunakan .catch
+```
