@@ -635,5 +635,27 @@ resolve -> jika kondisi berhasil
 reject -> jika kondisi tidak terpenuhi
 
 untuk mengambil resolve menggunakan .then
-sedangkan untuk mengambil reject menggunakan .catch
+sedangkan untuk mengambil reject menggunakan .catchc
 ```
+
+<h2>Web Storage</h2>
+
+
+<h3>Web API</h3>
+Web API berfungsi untuk menjembatani antara browser dan bahas pemrograman untuk saling berkomunikasi.
+
+Dalam penggunaanya web storage dapat menyimpan beberapa hal yaitu
+- preferensi user
+- Setting
+- Score
+- Posisi video
+
+Web storage terdapat 2 jenis yaitu
+1. Local storage -> Penyimpanan data yang gada batas waktunya
+2. SessionStorage -> hanya saatu sesi yaitu saat mengakses, apanila keluar maka akan terhapus
+
+Web storage ini tidak boleh digunakan untuk:
+- Data Sensitif
+- Otentikasi
+
+
