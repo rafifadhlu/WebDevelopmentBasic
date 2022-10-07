@@ -588,10 +588,7 @@ JS Asynchronous
 
 dalam javascript proses yang dilaksanakan dengan ASynchronous
 
-1. Callback
-
-Callback adalah function yang dijadikan argumen dan menjalankan program dengan estimasi waktu ter cepat. sebagai contoh :
-
+Asynchronous
 ```
 setTimeout(() => {
     console.log("A")
@@ -603,6 +600,24 @@ console.log("c")
 dalam program ini akan lebih dlu tampil B setelah itu C, karena A mempunyai jeda waktu selama 10 ms.
 ```
 
+
+1. Callback
+
+Callback adalah function yang dijadikan argumen dan jalan di function lain. sebagai contoh :
+
+```
+function tes (kal1 , kal2) {
+    console.log(`${kal1} , ${kal2}`);
+}
+
+function hello (callback){
+    const name1 = "ini tes1"
+    const name2 = "ini tes2"
+    callback(name1,name2);
+}
+
+hello(tes)
+```
 
 2. Promies
 Dalam promies terdapat istilah pending , fullfiled, rejected. lalu apa itu?
