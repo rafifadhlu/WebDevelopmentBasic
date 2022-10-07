@@ -658,4 +658,6 @@ Web storage ini tidak boleh digunakan untuk:
 - Data Sensitif
 - Otentikasi
 
+Pembelajaran minggu ini selesai sudah, banyak suka dan duka yang ada. Sukanya banyak pengetahuan baru yang didapatkan Dukanya Mashallah tugasnya mantap. tapi gapapa heheh tugas yang ada membantu untuk memahami materi dan implementasi untuk kedepanya. Sekian dari saya, kurangnya ada di pemerintah lebihnya ada di dompet saya. Selamat malam buat kk yg baca sampe akhir. Goodnight.
+
 
