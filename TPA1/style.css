@@ -15,15 +15,18 @@
 *{
     margin : 0;
     padding : 0;
+    scroll-behavior: smooth;
 }
-
+main,footer{
+    padding-top: 5em;
+}
 header{
     background-color: var(--main-color);
     width : 100%;
     height : 5rem;
     border-radius: 0px 0px 10px 10px;
-    box-shadow: 0px 0px 10px 1px whitesmoke;
-    
+    box-shadow: 0px 0px 10px 1px purple;
+    position : fixed;
 }
 
 header .nav-bar{
@@ -47,6 +50,11 @@ li{
 li a{
     text-decoration : none;
     color : var(--neutral-color1);
+}
+
+ul #hamburger{
+    display : none;
+    
 }
 
 
@@ -81,7 +89,7 @@ li a{
 
 }
 
-.hi-page p{
+.hi-page .per{
     padding-top : 20px;
     font-size: 20px;
     width : 40%;
@@ -108,7 +116,6 @@ li a{
 }
 
 .card .item-card{
-    
     display: flex;
     border: 1px solid;
     width: 100%;
@@ -131,13 +138,11 @@ img{
     display : flex;
     flex-direction: row;
     margin-top:40px;
-    border: 1px solid;
 }
 
 #about .about-page{
     width : 80%;
     height : 90%;
-    border: 1px solid;
     text-align: center;
 }
 
@@ -154,7 +159,6 @@ img{
 }
 
 .def-page .greet{
-    border:1px solid;
     font-family: 'Passions Conflict', cursive;
     height : 100%;
     width : 50%;
@@ -166,7 +170,6 @@ img{
     align-items:center;
     text-align : right;
     justify-content:center;
-    border: 1px solid;
     width : 100%;
     font-size:20px;
 }
@@ -178,12 +181,11 @@ img{
     display : flex;
     flex-direction: row;
     margin-top:40px;
-    border: 1px solid;
+ 
 }
 
 #skill .skill-page{
     text-align:center;
-    border: 1px solid;
     width : 80%;
     height : 90%;
 }
@@ -192,34 +194,195 @@ img{
     font-size: 40px;
 }
 
-.skill-page .def-page{
-    background-color : var(--neutral-color1);
+.skill-page .card-page{
+    background-image : linear-gradient(to top left, #25316D , #4C0033);
     border-radius:2em;
     margin: 50px;
     display : flex;
     height : 80%;
     box-shadow: 2px 0px 10px 0px grey;
     object-fit: cover ;  
-    color: black;
 }
 
-.def-page .card{
-    background-color : var(--neutral-color1);
+.card-page .card{
+    background-color : var(--main-color);
     border-radius: 2em;
     box-shadow: 2px 0px 10px 0px grey;
     width: 30%;
     height : 80%;
-    border: 1px solid;
     margin: 50px 30px 0px 30px;
 }
 
-.def-page .card .tittle-skill{
-    border: 1px solid;
+.card-page .card .tittle-skill{
     padding: 10px;
 }
 
 .card .pic-card{
-    border: 1px solid black;
-    height: 50%;
+    height: 80%;
     width:100%;
+    padding-top: 2em;
+}
+
+.pic-card img{
+    padding-top: 10px;
+    object-fit: cover;
+}
+
+.pic-card img:hover{
+    transition:ease-in 100ms;
+    width : 100%;
+    height :90%;
+}
+
+
+#contact{
+    height : 20rem;
+    text-align : center;
+    display : flex;
+    flex-direction : column;
+}
+#contact .container-con{
+    width : 100%;
+    height : 20%;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    padding-top: 1.5em;
+}
+
+.contact-p svg{
+    padding:0;
+    margin: 0;
+    cursor : pointer;
+    padding-top: 2em;
+}
+
+.contact-p svg:hover{
+    color: black;
+    transition: ease-in-out 100ms;
+}
+
+footer h1{
+    padding-top: 1em;
+}
+.email-cp{
+    background-color:black;
+    padding-bottom: 10px;  
+    height : 100%; 
+}
+
+@media only screen and (max-width: 900px) {
+    ul #hamburger{
+        display : inline;
+        justify-content : right;
+    }
+    
+    li {
+        display : none;
+    }
+
+    #intro-sec{
+        padding-top:200px;
+    }
+    #intro-sec .welcome-page{
+        display : flex;
+        flex-direction : column;
+    }
+
+    .welcome-page .per{
+        width : 100%;
+        text-align : center;
+        font-size: 20px;
+    }
+    #intro-sec .welcome-page .hi-page{
+        display : flex;
+        flex-direction : column;
+    }
+
+    .hi-page .avatar{
+        width : 100%;
+        padding : 40px 0px 40px 0px;
+    }
+
+    #about{
+        margin-top: 100px;
+    }
+
+    #about .about-page .def-page{
+        display : flex;
+        flex-direction : column;
+    }
+
+    #about .about-page .def-page .greet{
+        width : 100%;
+        font-size: 8em;
+    }
+
+    #about .about-page .def-page .defi{
+        font-size: 1em;
+        padding-top: 1.5em;
+        text-align: center;
+    }
+
+   
+    @keyframes display {
+        0% {
+        transform: translateX(200px);
+        opacity: 0;
+        }
+        10% {
+        transform: translateX(0);
+        opacity: 1;
+        }
+        20% {
+        transform: translateX(0);
+        opacity: 1;
+        }
+        30% {
+        transform: translateX(-200px);
+        opacity: 0;
+        }
+        100% {
+        transform: translateX(-200px);
+        opacity: 0;
+        }
+    }
+  
+
+  #skill{
+    margin-top:0px;
+  }
+  .card-page {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    z-index: -1;
+    border: 1px solid;
+  }
+  
+  .card-page > .card {
+    order: -1;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    left: calc(40% - 100px);
+    opacity: 0;
+    animation: display 8s infinite;
+  }
+  
+  .card:nth-child(1) {
+    animation-delay: 2s;
+  }
+  .card:nth-child(2) {
+    animation-delay: 4s;
+  }
+  .card:nth-child(3) {
+    animation-delay: 6s;
+  }
+
+  #contact{
+    font-size: 10px;
+    height:fit-content;
+  }
+
 }
