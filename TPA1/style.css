@@ -5,12 +5,27 @@
     --main-color : #25316D;
     --sc-color : #97D2EC;
     --neutral-color : ;
-    background-image: linear-gradient(to bottom right, #25316D , #4C0033);
+    background-image: linear-gradient(-45deg, #25316D , #4C0033 , #223388 , #4C0033);
     font-family :ruda ,sans-serif;
+    background-size: 400% 400%;
     --neutral-color1 : white;
     color: white;
+    animation: gradient 10s ease infinite;
+    
 }
-
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
 
 *{
     margin : 0;
@@ -31,11 +46,19 @@ header{
 
 header .nav-bar{
     padding : 30px;
+    display: flex;
+
 }
 
+.item{
+    display : flex;
+    flex-direction : row;
+    width : 100%;
+}
 header .nav-bar ul{
     display:flex;
     justify-content:space-around;
+    width : 100%;
 }
 
 li{
@@ -52,11 +75,10 @@ li a{
     color : var(--neutral-color1);
 }
 
-ul #hamburger{
+#hamburger{
     display : none;
     
 }
-
 
 #intro-sec{
     justify-content : center;
@@ -271,14 +293,56 @@ footer h1{
     height : 100%; 
 }
 
-@media only screen and (max-width: 900px) {
-    ul #hamburger{
-        display : inline;
-        justify-content : right;
+@media only screen and (max-width: 1500px){
+    .avatar .card{
+        height : fit-content;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #hamburger{
+        display : block;
+        position :absolute;
+        left: 85%;
+        top: 25%;
+        border: 1px solid;
+    }
+
+    .icon-at{
+        position : absolute;
+        border: 1px solid;
+    }
+
+    .nav-bar{
+        background-color: var(--main-color);
+        transform: translateY(-290px);
+        transition: transform 0.2s;
     }
     
-    li {
-        display : none;
+    .showNav-bar{
+        transform : translateY(0px);
+    }
+
+    .item{
+        width : 100%;
+        
+    }
+    .nav-bar .item ul{
+        display : flex;
+        flex-direction : column;
+        justify-content:center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    
+    li{
+        display: flex;
+        justify-content : center;
+        border-bottom: 1px solid;
+    }
+    li:last-child{
+        border: none;
     }
 
     #intro-sec{
@@ -385,4 +449,10 @@ footer h1{
     height:fit-content;
   }
 
+}
+
+@media only screen and (max-width: 600px) {
+    .card-page > .card {
+        width: 70%;
+      }
 }
