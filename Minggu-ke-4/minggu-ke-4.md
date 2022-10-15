@@ -212,3 +212,5 @@ Mock API ini merupakan sebuah platform yang digunakan untuk membuat sebuah data 
 2. Isi data dan properti yang diperlukan
 3. Klik create 
 4. Sesuaikan isi banyaknya data dengan track di menu.
+
+Selesai sudah materi minggu ini. Tepar X_X
