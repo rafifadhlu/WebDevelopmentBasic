@@ -13,6 +13,7 @@ dalam menggunakan react terdapat bundling yang berisi banyak file yang berguna u
 
 <h3>react fragment</h3>
 React fragment digunakan dengan cara mambuat dua komponen dan di import dengan syntax:
+
 ```
 import (namaKomponenen) from 'lokasi'
 ```
@@ -53,14 +54,20 @@ maka di file app.js perlu ditambahkan import dan tambahkan react fragment untuk 
 
 Salah satu untuk membuat folder selain di atas, bisa juga menggunakan React Vite dengan menginstalasi dengan perintah 
 ```
-npm create vite@latest my-vue-app --template
+npm create vite@latest my-app --template react -> apabila ingin menggunakan react
 ```
-salah satu cara ini dapat mempermudah dan mengefisiensi waktu pembuatan foldernya.
+salah satu cara ini dapat mempermudah dan mengefisiensi waktu pembuatan foldernya. selanjutnya tinggal mengikuti perintah lanjutan yang sudah di arahkan di dalam terminal
+
+untuk running code nya dengan perintah
+```
+npm run dev
+```
 
 
 <h3>State dan Prop</h3>
 
-Merupakan sebuah object yang menyimpan komponen. 
+<h4>State</h3>
+Data yang ada di dalam komponen disebut sebagai state. 
 
 <h4>Props</h4>
 props digunakan untuk meneruskan argumen yang akan diteruskan ke komponen react. contoh:
@@ -97,7 +104,7 @@ function App() {
 ```
 <h4>useState</h4>
 
-useState digunakan untuk membuat variable dalam react yang membedakan hanya penulisan variabelnya. contoh:
+useState digunakan untuk membuat variable dalam react karena javascript bersifat imutable yang membedakan hanya penulisan variabelnya. contoh:
 
 Pada file komponen Home terdapat kode
 ```
@@ -138,4 +145,57 @@ function App() {
 Stateless = hanya memiliki props
 statefull = memiliki local state dan memiliki props
 
+<h3>Event Listener</h3>
+
+Event listener merupakan event yang menerima fungsi dari sebuah elemen. Seperti event onClick, onHover dll.
+contoh penerapan:
+
+dalam kasus ini ingin membuat sebuah button untuk membuat jumlah
+```
+import {useState} from "react"; -> Import library dari react
+
+// Pembuatan function komponen counter
+function Counter(){
+    
+    const[count,setCount] = useState(0) -> pembuatan state dengan value awal 0
+
+    //fungsi pertambahan untuk jumlah
+    const increment =() =>{
+        console.log("increment")
+        setCount(count + 1) -> Penggunaan state untuk fungsi pertambahan
+    }
+    console.log(count);
+
+    return (
+        <>
+        <button> - </button>
+        <span>{count}</span> -> props dengan isi count untuk mengambil data setelah increment
+        <button onClick={increment}>+</button> -> props dengan pemanggilan fungsi increment
+        </>
+    )
+}
+
+export default Counter
+```
+
+<h3>React Functional Component</h3>
+
+
+<h4>Life Cycle</h4>
+Pada tiap life cycle, dapat menambahkan efek yang diperlukan. contoh
+- komponen muncul menggunakan api fetch
+
+
+- mount
+- update
+- unmount
+
+- mount
+dimana komponen muncul ke permukaan
+
+- update
+dimana komponen diupdate apabila ada perubahan
+
+- unmount
+Kondisi dimana belum ada perubahan.
 
