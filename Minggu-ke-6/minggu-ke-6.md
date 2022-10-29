@@ -178,15 +178,39 @@ function Counter(){
 export default Counter
 ```
 
-<h3>React Functional Component</h3>
+selain menggunakan state seperti diatas, dapat menambahkan event menggunakan function, contoh seperti dibawah ini:
+
+```
+import {useState} from "react"; -> Import library dari react
+
+// Pembuatan function komponen counter
+function Counter(){
+    
+    const[count,setCount] = useState(0) -> pembuatan state dengan value awal 0
+
+    //fungsi pertambahan untuk jumlah
+    const handleClick = () =>{
+        console.log("Click")
+    }
+
+    return (
+        <>
+        <button onClick={handleClick}>+</button> -> Pemanggilan fungsi
+        </>
+    )
+}
+
+export default Counter
+```
+
+Penggunaan state dipakai saat komponen yang digunakan memerlukan data
 
 
 <h4>Life Cycle</h4>
-Pada tiap life cycle, dapat menambahkan efek yang diperlukan. contoh
-- komponen muncul menggunakan api fetch
+Pada tiap life cycle, dapat menambahkan efek yang diperlukan. 
 
-
-- mount
+Siklus yang biasa terjadi ada 3 yaitu:
+- mount 
 - update
 - unmount
 
@@ -198,4 +222,46 @@ dimana komponen diupdate apabila ada perubahan
 
 - unmount
 Kondisi dimana belum ada perubahan.
+
+Pada life cycle dapat juga di tambahkan side effect. Sebagai contoh: ingin menambahkan side effect setelah di klik akan muncul "halo" di console.log
+```
+
+function ListDigimon (){
+
+    useEffect(() => {
+        console.log("Hallo");   -> akan tampil setelah halaman dibuka
+    });
+```
+
+<h3>Form</h3>
+Pembuatan form disini menggunakan framework react. dalam struktur formulir terdapat beberapa hal penyusunnya yaitu
+tag form:  
+
+```
+<form></form>
+```
+
+Pembuatan form banyak jenisnya ada input address, name, number yang akan di submit menggunakan elemen button. Sebagai contoh:
+```
+import {useState} from "react";
+
+const form = () =>{
+    const [name, setName] = useState(""); -> pembuatan state dengan isi value string kosong untuk diisi dengan data dari input user
+
+    return (
+        <>
+            <form> -> pembuatan form
+                <label htmlFor="name">Name</label>
+                <input type="text" value={name} onChange={(e) => setName(e.target.value)}/>
+            </form>
+        </>
+    );
+};
+
+export default form;
+
+//value pada tag input digunakan untuk mengisi value dari user
+//onChange digunakan untuk mengambil perubahan data untuk meneruskannya ke dalam setName dengan mengambil data dari
+ e.target.value
+```
 
