@@ -1,4 +1,4 @@
-<h1>Ringkasan Materi minggu ke 6 Web Basic Development </h1>
+<h1>Ringkasan Materi minggu ke 6 Front end Bootcamp </h1>
 
 <h2> REACT JS </h2>
 
