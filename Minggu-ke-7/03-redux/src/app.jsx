@@ -1,14 +1,14 @@
-import { useState } from 'preact/hooks'
-import './app.css'
+import { useState } from 'react'
+import './App.css'
 
-import Todolist from './components/TodoList'
-
-export function App() {
+function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <Todolist/>
-    </>
+    <div className="App">
+    
+    </div>
   )
 }
+
+export default App
