@@ -375,19 +375,26 @@ setelah data mockapi jadi dilanjutkan setup redux. yaitu pembuatan komponen dan 
 <h4>pembuatan store </h4>
 
 ```
-import {createStore, combineReducers} from 'redux'; -> import library
+import {createStore, combineReducers, applyMiddleware} from 'redux'; 
+import thunk  from 'redux-thunk'; -> import library thunk untuk fungsi async nantinya
+// untuk menginstall redux-thunk menggunakan perintah "npm install redux-thunk";
+import todoReducer from '../reducer/todoReducer';
 
-const allReducers = combineReducers({ -> penggunaan combinereducer untuk menggabungkan 2 reducer
+
+
+const allReducers = combineReducers({ 
     todo:todoReducer,
 })
 
-const store = createStore(allReducers)
+const store = createStore(allReducers, applyMiddleware(thunk))
 
 export default store
 ```
 <h4>pembuatan Reducer</h4>
 
 ```
+import { FETCH_START, SUCCES_GET_TODO } from "../action/todoAction";
+
 const initialState = {
     todos: [],
     isLoading:false,
@@ -397,9 +404,84 @@ const initialState = {
 
 const todoReducer = (state = initialState, action) => {
     switch(action.type){
+    case FETCH_START: -> apabila terdapat action yang diiberikan maka akan menjalankan return yang dibawah
+        return{
+            ...state,
+            isLoading:true,
+        }
+    case SUCCES_GET_TODO: -> apabila terdapat action yang diiberikan maka akan menjalankan return yang dibawah
+        return {
+            ...state,
+            todos:action.payload,
+            isLoading:false
+        }
         default: return state;
     }
 }
 
 export default todoReducer;
 ```
+<h4>pembuatan Action</h4>
+
+Pada action pembahasan kali ini, terdapat beberapa library yang digunakan, salah satunya yaitu axios yang berguna untuk melakukan fetching data dari mockApi yang dibuat tadi.
+
+```
+import axios from "axios" -> library axios
+
+export const GET_TODO = "GET_TODO"
+export const FETCH_START ="FETCH_START"
+export const SUCCES_GET_TODO = "SUCCESS_GET_TODO"
+
+function fetchStart(){
+    return{
+        type: FETCH_START
+    }
+}
+
+function successGet(params){
+    return {
+        type: SUCCES_GET_TODO,
+        payload: params
+    }
+}
+
+export const getTodo = () => {
+    return async(dispatch) => {
+        dispatch(fetchStart())
+
+        const res = await axios.get("https://6356aa0c2712d01e14f9b1d7.mockapi.io/todo")
+        dispatch(successGet(res.data))
+    }
+}
+
+
+```
+<h4>pembuatan Komponen</h4>
+
+```
+import React, {useEffect} from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getTodo } from "../redux/action/todoAction";
+
+function TodoList() {
+    const dispatch = useDispatch()
+    const state = useSelector(state => state.todo)
+    console.log(state)
+
+    //useEffect akan menjalankan dispatch getTodo yang masuk ke dalam action untuk diteruskan ke dalam reducer. 
+    useEffect(() => {
+        dispatch(getTodo())
+    },[])
+
+
+    return(
+        <div>
+            <h2>Todolist</h2>
+        </div>
+    )
+}
+
+export default TodoList
+```
+
+udaa udaa cukup sekian duluu mw bbo. 
