@@ -359,6 +359,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 ```
 <h4>Async Middleware and Thunk </h4>
 
+Middleware and thunk ini digunakan untuk proses async yang membutuhkan waktu atau delay. seperto fetch data yang membutuhkan data.
+
 karena pembahasan ini mengenai Async maka menggunakan data, disini menggunakan data dummy yang dibuat di mockApi. dengan isi data:
 ```
  {
@@ -376,11 +378,28 @@ setelah data mockapi jadi dilanjutkan setup redux. yaitu pembuatan komponen dan 
 import {createStore, combineReducers} from 'redux'; -> import library
 
 const allReducers = combineReducers({ -> penggunaan combinereducer untuk menggabungkan 2 reducer
-    todo:() => {},
+    todo:todoReducer,
 })
 
 const store = createStore(allReducers)
 
 export default store
 ```
+<h4>pembuatan Reducer</h4>
 
+```
+const initialState = {
+    todos: [],
+    isLoading:false,
+    err:null
+}
+
+
+const todoReducer = (state = initialState, action) => {
+    switch(action.type){
+        default: return state;
+    }
+}
+
+export default todoReducer;
+```
