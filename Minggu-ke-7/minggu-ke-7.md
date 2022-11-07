@@ -185,3 +185,202 @@ porps: PropTypes.shape({
 })
 
 ```
+
+<h2>Router</h2>
+Router digunakan untuk perpindahan page dari satu page ke page lainnya. Router terlihat di alamat Address seperti : 
+
+```
+localgsdg.com/path
+```
+
+Instalasi react router
+```
+npm install react-router-dom@6
+```
+<h3>penerapan</h3>
+Berikut penerapan fungsi Route untuk menambahkan jalur. setelah instalasi maka dilakukan import Library pada file app.jsx yaitu:
+
+```
+import {Routes,Route,Link} from 'react-router-dom';
+```
+
+setelah sudah maka masukan fungsi Routes, Route, dan Link untuk menghubungkan satu page dan page lainnya.
+```
+
+function App() {
+
+  return (
+    <div className="App">
+      <nav >
+        <Link to={"/"}>Home</Link> -> mirip dengan <a href> untuk berpindah page melalui route yang sudah dibuat
+        <Link to={"/About"}>About</Link>
+      </nav>
+
+      <Routes> -> Pembuatan Routes 
+        <Route path='/' element={<Home/>}/> ->Pembuatan rute ke home dengan alamat "/" 
+        <Route path='/About/' element={<About/>}/> ->Pembuatan rute ke aboud dengan alamat "/About"
+      </Routes>
+    </div>
+  )
+}
+
+```
+
+<h2>Redux</h2>
+Redux digunakan untuk mempermudah distribusi state yang ada dengan meminimalkan masalah seperti Props Drilling.
+
+<h3>Instalasi Redux</h3>
+untuk menjalankan Redux perlu menginstall package redux yaitu dengan perintah
+
+Install Redux dan React Redux
+```
+npm install redux react-redux
+```
+
+tahap pertama buat sebuah folder yang bernama redux yang di dalamnya diisi dengan beberapa folder. folder yang pertama yaitu untuk menampung sebuah store, yang kedua membuat reducer dan terakhir membuat folder action.
+
+<h4>pembuatan store </h4>
+Store adalah tempat menyimpan berbagai state dari reducer yang ada
+
+```
+import {createStore} from 'redux'; -> import createStore dari redux
+import counterReducer from '../reducer/counterReducer'; -> import reducer yang berfungsi sebagai penyimpan data
+
+const store = createStore(counterReducer); 
+
+export default store;
+```
+syntax diatas hanya menampung satu reducer, apabila ingin menggambungkan dua reducer maka menggunakan
+```
+const allReducer = combineReducer({
+    counter : counterReducer,
+    todo : todoReducer
+})
+
+const store = createStore(allReducer); 
+```
+
+
+<h4> pembuatan Reducer</h4>
+Reducer digunakan untuk menyimpan sebuah function dan akan menerima respon action yang di dispatch serta disimpan ke dalam store
+
+```
+import { INCREMENT,DECREMENT } from "../action/counterAction"; -> import action yang akan di dispatch yang digunakan untuk respon
+
+const initialState = { -> inisialisasi state dengan value default 0
+    count:0
+};
+
+function counterReducer(state = initialState, action){
+    switch (action.type){ -> Penggunaan switch case dengan case Increment decrement yang ada pada Action
+        case INCREMENT: -> apabila case yang dipanggil increment maka mengembalikan return
+            return{
+                count: state.count+1 -> count mendapat nilai yaitu state.count + 1. yang dimana count akan bertambah satu
+            }
+        case DECREMENT:
+            return{
+                count: state.count-1 -> count mendapat nilai dari perhitungan state.count - 1. yang dimana count akan berkurang satu
+            }
+            default: return state; -> apabila tidak ada respon dari action maka mengembalikan value state
+    }
+}
+
+export default counterReducer; -> export supaya reducer dapat di import di store
+```
+
+<h4> Pembuatan Action</h4>
+Action berfungsi untuk menerima respon yang diterima dan diteruskan ke dalam reducer
+
+```
+export const INCREMENT = "INCREMENT"
+export const DECREMENT = "DECREMENT"
+
+export function increment(){
+    return{
+        type:INCREMENT
+    }
+}
+
+export function decrement(){
+    return{
+        type:DECREMENT
+    }
+}
+```
+
+<h4>Penggunaan state ke dalam component</h4>
+pada praktik kali ini di contoh kan membuat Counter untuk menambahkan jumlah. maka komponen yang dibuat yaitu:
+
+```
+import React from "react";
+import {useSelector,useDispatch}  from "react-redux";
+import {decrement,increment} from '../redux/action/counterAction';
+
+function Counter() {
+    const dispatch = useDispatch() -> digunakan untuk menerima respon yang berasal dari state
+    const {count} = useSelector(state => state) 
+    ///useSelector digunakan untuk akses data ke dalam store yang sudah dibuat
+    
+    //apabila menggunakan combine Reducer maka syntaxny sperti mengakses objek
+    const {count} = useSelector(state => state.counter) 
+
+  return (
+    <div>
+      <button onClick={() => dispatch(increment())}>+</button>
+      //dispatch(increment()) memanggiil fungsi increment dari action yang telah dibuat dan di import kedalam komponen
+      <span>{count}</span>
+      <button onClick={() => dispatch(decrement())}>-</button>
+    </div>
+  );
+}
+
+export default Counter
+
+```
+
+
+setelah pembuatan beberapa hal penting diatas. kita juga perlu melakukan penambahan Provider pada file main.js untuk membuka akses komunikasi antara component dan redux
+
+```
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+
+import {Provider} from 'react-redux' -> import Provider untuk jalur antar komponen ke dalam store
+import store from './redux/store' -> Import store untuk komponen
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <Provider store={store}> -> store dengan alamat store yang sudah di import
+      <App />
+    </Provider>
+  </React.StrictMode>
+)
+
+```
+<h4>Async Middleware and Thunk </h4>
+
+karena pembahasan ini mengenai Async maka menggunakan data, disini menggunakan data dummy yang dibuat di mockApi. dengan isi data:
+```
+ {
+  "todo": "Personal Loan Account",
+  "isDone": false,
+  "id": "1"
+ },
+
+```
+setelah data mockapi jadi dilanjutkan setup redux. yaitu pembuatan komponen dan juga pembuatan store, reducer, dan action.
+
+<h4>pembuatan store </h4>
+
+```
+import {createStore, combineReducers} from 'redux'; -> import library
+
+const allReducers = combineReducers({ -> penggunaan combinereducer untuk menggabungkan 2 reducer
+    todo:() => {},
+})
+
+const store = createStore(allReducers)
+
+export default store
+```
+
